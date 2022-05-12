@@ -1,0 +1,64 @@
+submission_5 2.07M  -> Adversarial              2.07M/215922 -> +5000 train -5000train                           val_set_6 val 10000 drop 0
+submission_7 2.03M  -> days_passed                                                                               val_set_7 val 10000 drop 3000
+submission_12 - 1247/1805 -> index mul                                                                           val_set_8 val 5000 drop 5000 weighted
+submission_14 - 1441/- -> lofo
+submission_15 - 1339/- -> lofo(3)
+submission_16 - 1301/- -> lofo(3), building_type_dummies
+submission_17 - 1223/- -> building_type_dummies
+submission_18 - 1140/2277? -> building_type_dummies (hp opt)
+submission_19 - 1068/5305 -> district-city-county averages
+submission_21 - 194$-1203/- -> usdtry monotonically increasing
+submission_22 - 190$-1196/2458 -> usdtry monotonically increasing + > 1M price add to train
+submission_23 - 622m2/3002  -> usdtry monotonically increasing per m
+submission_23 - 1779/-      -> usdtry monotonically increasing, target log (not tuned)
+submission_26 - 1201/1619      -> mono usd, target log
+submission_27 - 1300/-      -> mono usd, target log, tuned?
+submission_28 - 1033/-      -> mono usd, target log, +12.5 train added
+submission_29 - 1024/1468      -> mono usd, target log, +14 train added
+submission_31 - 2084/      -> mono usd, target log, data cleaning, -garden_area
+submission_32 - 2099/      -> mono usd, target log, data cleaning, +garden_area, +14 train added
+submission_33 - 2033/      -> mono usd, target log, data cleaning, +garden_area, +14 train added, no garden_area shinanigans
+submission_33 - 1856/1780      -> mono usd, target log, data cleaning, +garden_area, +14 train added, no garden_area shinanigans
+submission_34 - 2014/      -> mono usd, target log, data cleaning, +garden_area, +14 train added, no garden_area shinanigans
+submission_36 - 1392/      -> mono usd, target log, data cleaning, +14 train added, no garden_area shinanigans old valid set
+submission_39 - 1319/      -> norm log, data cleaning, +14 train added, no garden_area shinanigans old valid set
+submission_40 - 1483/      -> norm log, index interpolate, data cleaning, +14 train added, no garden_area shinanigans old valid set
+submission_41 - 1035/      -> norm log, index interpolate, data cleaning, +14 train added, 20 hp, own valid set {'lambda': 1.0047853167840597, 'alpha': 0.012528566263161608, 'colsample_bytree': 0.8, 'subsample': 0.6, 'eta': 0.08532292229135402, 'n_estimators': 800, 'max_depth': 11, 'min_child_weight': 84.61062692945238}
+submission_42 - 1485/      -> mono usd log, data cleaning+1, +14 train added, 60 hp
+submission_43 - 1315/1604      -> norm log, index interpolate, +14 train added, 60 hp old valid set {'lambda': 0.24242405669951675, 'alpha': 0.010588175021791135, 'colsample_bytree': 0.8, 'subsample': 0.8, 'eta': 0.03519395369526202, 'n_estimators': 1600, 'max_depth': 13, 'min_child_weight': 0.2961315750718051}
+submission_45 - 1144/1586      -> norm log, index interpolate, +14 train added, 60 hp own valid set drop dups {'lambda': 3.9233247370316184, 'alpha': 0.04906859062759509, 'colsample_bytree': 1.0, 'subsample': 0.8, 'eta': 0.08274036985279404, 'n_estimators': 1200, 'max_depth': 12, 'min_child_weight': 0.003791371128767107}
+submission_47 - 1096/        -> norm log, index interpolate, +14 train added, 60 hp own valid set drop dups
+submission_48 - 1053/        -> mono usd log, data cleaning+1, +14 train added, own valid set drop dups {'lambda': 0.6181382119811857, 'alpha': 0.04370651839672411, 'colsample_bytree': 0.8, 'subsample': 0.6, 'eta': 0.09934763442651655, 'n_estimators': 1600, 'max_depth': 8, 'min_child_weight': 0.2164017561160627}
+submission_49 - 982/3109(BAD)         -> mono usd log, data cleaning+1, +14 train added, own valid set drop dups + district_pp, scene_count   {'lambda': 0.49327205689600123, 'alpha': 0.04736552434665292, 'colsample_bytree': 0.9, 'subsample': 0.8, 'eta': 0.09776350420441447, 'n_estimators': 2800, 'max_depth': 13, 'min_child_weight': 1.4481162472098768}
+sub_lgb_1 -   - 1141/  (BAD)       -> mono usd log, data cleaning+1, +14 train added, own valid set drop dups + district_pp, scene_count  {'lambda_l1': 9.244994657014642e-07, 'lambda_l2': 4.0605902592572095e-08, 'num_leaves': 134, 'feature_fraction': 0.5722353878977265, 'bagging_fraction': 0.5823310974551857, 'bagging_freq': 1, 'min_child_samples': 24}
+submission_50 - 1278/        -> mono usd log, data cleaning+2, +14 train added, own valid set drop dups iso(1e-3) {'lambda': 7.324177721827244, 'alpha': 0.05929746765614198, 'colsample_bytree': 1.0, 'subsample': 0.7, 'eta': 0.09593000071432208, 'n_estimators': 3600, 'max_depth': 12, 'min_child_weight': 2.3111874721034207}. Best is trial 9 with value: 223758.89517671967.
+submission_51 - 1301/        -> mono usd log, data cleaning+2, +14 train added, own valid set drop dups iso(1e-3) {'lambda': 0.06123171764270329, 'alpha': 0.11271030520313935, 'colsample_bytree': 0.9, 'subsample': 1.0, 'eta': 0.07822643439730197, 'n_estimators': 800, 'max_depth': 7, 'min_child_weight': 5.604950685813457}
+submission_52 - 1154/        -> mono usd log, data cleaning+2, +14 train added, own valid set drop dups iso(1e-3) train ilk 5000 {'lambda': 0.004416234625146614, 'alpha': 0.19375026091218872, 'colsample_bytree': 1.0, 'subsample': 0.8, 'eta': 0.09954509323214021, 'n_estimators': 4000, 'max_depth': 15, 'min_child_weight': 14.216390735404289}
+submission_53 - 1145/        -> norm log, data cleaning+2, +14 train added, own valid set drop dups iso(1e-3) {'lambda': 3.886698735701818, 'alpha': 0.7075878492534666, 'colsample_bytree': 1.0, 'subsample': 0.7, 'eta': 0.09983244214046415, 'n_estimators': 400, 'max_depth': 13, 'min_child_weight': 23.207164842860006}
+submission_54 - 1139/1597    -> county_norm log, data cleaning+2, +14 train added, own valid set_3  drop dups iso(1e-3) {'lambda': 0.14558543410501945, 'alpha': 0.03438402018394827, 'colsample_bytree': 0.9, 'subsample': 0.7, 'eta': 0.09848840096608782, 'n_estimators': 3600, 'max_depth': 15, 'min_child_weight': 26.920940545983953}
+submission_55 - 1690/        -> county_norm log, data cleaning+3, +14 train added, own valid set_4 +ilk 5000 drop dups iso(1e-3) {'lambda': 1.1890664103808135, 'alpha': 0.1329758977511464, 'colsample_bytree': 1.0, 'subsample': 0.7, 'eta': 0.06400919357920834, 'n_estimators': 800, 'max_depth': 8, 'min_child_weight': 2.0469378584356326}
+submission_56 - /        -> county_norm log, data cleaning+3, own valid set_6 +ilk 5000 drop dups iso(1e-3) {'lambda': 1.1890664103808135, 'alpha': 0.1329758977511464, 'colsample_bytree': 1.0, 'subsample': 0.7, 'eta': 0.06400919357920834, 'n_estimators': 800, 'max_depth': 8, 'min_child_weight': 2.0469378584356326}
+submission_57 - /        -> county_norm log, data cleaning+3, own valid set_7  drop dups iso(1e-3) {'lambda': 1.1890664103808135, 'alpha': 0.1329758977511464, 'colsample_bytree': 1.0, 'subsample': 0.7, 'eta': 0.06400919357920834, 'n_estimators': 800, 'max_depth': 8, 'min_child_weight': 2.0469378584356326}
+submission_58 - 1140/        -> county_norm log, data cleaning+3, own valid set_8 weighted  drop dups  {'lambda': 24.272845926496455, 'alpha': 0.5496649673290263, 'colsample_bytree': 0.9, 'subsample': 0.7, 'eta': 0.09791720219094857, 'n_estimators': 800, 'max_depth': 13, 'min_child_weight': 0.0038427082698022897}
+submission_59 - 1203/        -> mono usd log, data cleaning+3, own valid set_8 weighted drop dups usdmultipliederror
+submission_60 - 1186/           -> mono usd log, data cleaning+3, own valid set_8 weighted drop dups
+submission_61 - 2043/           -> county_norm log, data cleaning+4, own valid set_8 weighted drop dups {'lambda': 1.9758606948753745, 'alpha': 0.0011707371839154322, 'colsample_bytree': 0.8, 'subsample': 0.8, 'eta': 0.09732632205852514, 'n_estimators': 2000, 'max_depth': 14, 'min_child_weight': 0.009767003692529364}
+submission_62 - 1714/1685       -> mono usd log, data cleaning+4, own valid set_8 weighted drop dups
+submission_62_ov - 511/       -> mono usd log, data cleaning+4, own valid set_8 weighted drop dups
+submission_63 - 287/               -> county_norm log, data cleaning+4, own valid set_9 weighted drop dups
+submission_64 - /               -> mono usd log, data cleaning+4, own valid set_9 weighted drop dups
+submission_65 - 268/1579            -> mono usd log, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_67 - 213/1703            -> mono usd log, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_68 - 220/            -> county_norm log, data cleaning+4, own valid set_9 weighted drop dups weight district * adv_value {'lambda': 0.10865293376816575, 'alpha': 0.5922539763625423, 'colsample_bytree': 1.0, 'subsample': 1.0, 'eta': 0.09592380910884567, 'n_estimators': 4000, 'max_depth': 12, 'min_child_weight': 0.
+submission_69 - 313/            -> county_norm log, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_70 - 652/            -> county_norm sample_weight_eval_set, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_75 - 999/342            -> mono usd log sample_weight_eval_set, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_76 - 956/336            -> mono usd log sample_weight_eval_set, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_77 - 1490/589            -> county_norm log sample_weight_eval_set, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_78 - 1180/571            -> county_norm log sample_weight_eval_set, data cleaning+4, own valid set_9 weighted drop dups weight district
+submission_79 - 1662/350            -> mono usd log sample_weight_eval_set, data cleaning+4, own valid set_10 weighted drop dups weight district
+submission_80 - 1624/306/1823            -> mono usd log sample_weight_eval_set, data cleaning+4, own valid set_10 weighted drop dups weight district
+submission_91 -
+
+submission_1065                        {'lambda': 0.07625074611819621, 'alpha': 17.17965668652807, 'colsample_bytree': 0.9, 'subsample': 0.8, 'eta': 0.06413320796249009, 'n_estimators': 2800, 'max_depth': 9, 'min_child_weight': 0.0001728063335245539}
+
